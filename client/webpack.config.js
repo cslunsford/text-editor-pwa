@@ -18,7 +18,6 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Text Editor',
-        base: '/',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
