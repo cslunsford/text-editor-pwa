@@ -12,7 +12,8 @@ module.exports = () => {
     },
     output: {
       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'auto'),
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '',
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -31,8 +32,8 @@ module.exports = () => {
         description: 'A text editor progressive web application',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        public_path: './',
+        start_url: '/',
+        public_path: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
